@@ -1,49 +1,33 @@
-# 🌤️ Shopfully Weather Project
-
-## 📌 Panoramica
-
-Questo progetto implementa una **pipeline di raccolta, modellazione e caricamento** di dati meteo tramite **OpenWeather API**, con l’obiettivo di supportare analisi storiche e KPI per città.
+🌤️ Shopfully Weather Project
+📌 Panoramica
+Questo progetto implementa una pipeline di raccolta, modellazione e caricamento di dati meteo tramite OpenWeather API, con l’obiettivo di supportare analisi storiche e KPI per città.
 
 Focus (stile Analytics/Data Engineering):
 
-- separazione **raw vs curated**
-- modello relazionale **fact + dimension**
-- query SQL analitiche
-- analisi con **pandas** su dataframe denormalizzato
-- strategia di **incremental loading** robusta (ritardi + correzioni) con **UPSERT**
-
----
-
-## 🎯 Obiettivo
-
+separazione raw vs curated
+modello relazionale fact + dimension
+query SQL analitiche
+analisi con pandas su dataframe denormalizzato
+strategia di incremental loading robusta (ritardi + correzioni) con UPSERT
+🎯 Obiettivo
 Raccogliere dati meteo per alcune città italiane (Milano, Bologna, Cagliari) e renderli disponibili per:
 
-- conteggio e ranking delle condizioni meteo nel tempo
-- medie e massimi di temperatura
-- variazioni giornaliere
-- vento massimo
-
----
-
-## ⚙️ Requisiti
-
-- Python 3.12+
-- Account OpenWeather (API key)
-
+conteggio e ranking delle condizioni meteo nel tempo
+medie e massimi di temperatura
+variazioni giornaliere
+vento massimo
+⚙️ Requisiti
+Python 3.12+
+Account OpenWeather (API key)
 Dipendenze (requirements.txt):
 
-- requests
-- python-dotenv
-- pandas
-- sqlalchemy *(opzionale, per evoluzioni future)*
+requests
+python-dotenv
+pandas
+sqlalchemy (opzionale, per evoluzioni future)
+🔐 Configurazione
+Creare un file .env nella root del progetto:
 
----
-
-## 🔐 Configurazione
-
-Creare un file `.env` nella root del progetto:
-
-```text
 OPENWEATHER_API_KEY=<la_tua_api_key>
 📂 Struttura del progetto
 text

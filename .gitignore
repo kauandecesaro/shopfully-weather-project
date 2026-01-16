@@ -1,0 +1,16 @@
+# venv
+venv/
+
+# env secrets
+.env
+
+# data artifacts
+data/weather.db
+data/raw/*.json
+data/processed/
+
+# OS/editor
+.DS_Store
+.vscode/
+__pycache__/
+*.pyc

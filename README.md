@@ -140,7 +140,6 @@ Diagramma disponibile in:
 docs/logical_schema.png
 
 
-(Se vuoi mostrarlo direttamente nel README:)
 
 ![Logical Schema](docs/logical_schema.png)
 
